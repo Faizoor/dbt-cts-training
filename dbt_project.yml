@@ -37,7 +37,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 seeds:
   schema: seeddata
 models:
-  dbt-cts-training:
-    # Applies to all files under models/example/
-    example:
-      +materialized: table
+  staging:
+    materialized: view
