@@ -1,7 +1,7 @@
 {{
     config
     ( 
-        materialized='incremental', unique_key='ORDERID'
+        materialized='incremental', unique_key='ORDERID' , schema='transforming'
     )
 }}
 select * from {{ref ("stg_payment")}}

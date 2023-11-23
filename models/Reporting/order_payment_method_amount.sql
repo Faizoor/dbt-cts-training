@@ -1,3 +1,7 @@
+{{ config( 
+    materialized = 'view' , schema='Reporting'
+)}}
+
 
 {% set paymentmethods = get_payment_methods()  %}
 

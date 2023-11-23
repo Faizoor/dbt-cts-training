@@ -1,5 +1,6 @@
-select  
-id as payment_id ,
-{{ cents_to_dollars('amount')}} as amount_usd 
+{{ config(schema = 'staging', materialized = 'table') }}
 
-from JAFFLESHOP.STAGGING.payment
+select  
+*
+
+from JAFFLESHOP.RAW.payment

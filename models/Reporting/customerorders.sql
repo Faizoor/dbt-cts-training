@@ -1,5 +1,5 @@
 {{ config( 
-    materialized = 'table' , alias = 'Customerorders' 
+    materialized = 'view' , schema='Reporting'
 )}}
 
 with customers as (

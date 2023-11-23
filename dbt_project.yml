@@ -38,4 +38,5 @@ seeds:
   schema: seeddata
 models:
   staging:
-    materialized: view
+    materialized: table
+ 
